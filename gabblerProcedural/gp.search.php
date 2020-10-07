@@ -24,9 +24,9 @@ require 'connectToDB.php';
 
 
     //----------Requête SQL pour trouver tous les mots ressemblant au mot-clé entré dans le champ Search-------------------------------
-                $ar_sql = /*"SELECT * FROM message,user,room WHERE content_message LIKE '%$ar_search%' OR nickname_user LIKE '%$ar_search%' OR date_message LIKE '%$ar_search%' OR name_room LIKE '%$ar_search%' ORDER BY date_message ASC";*/
+                 
 
-                "SELECT * FROM message
+                $ar_sql = "SELECT * FROM message
                 INNER JOIN user
                 ON id_user = fkey_user_id
                 INNER JOIN room
